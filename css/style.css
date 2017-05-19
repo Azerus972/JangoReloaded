@@ -1,0 +1,63 @@
+        #box {
+            width: 400px;
+            height: 280px;
+            z-index: 1;
+            animation-name: slidein;
+            animation-duration: 6s;
+            margin: 3% auto auto;
+            background: rgb(248, 248, 248);
+        }
+        
+        @keyframes BOX {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 0.25;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            75% {
+                opacity: 0.75;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        html,
+        body {
+            height: 100%;
+            background: rgb(60, 122, 205);
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            animation-name: slidein;
+            animation-duration: 2.5s;
+            text-decoration: white
+        }
+        
+        @keyframes slidein {
+            0% {
+                opacity: 0.0;
+            }
+            ;
+            25% {
+                opacity: 0.25
+            }
+            ;
+            50% {
+                opacity: 0.50
+            }
+            ;
+            75% {
+                opacity: 0.75
+            }
+            ;
+            100% {
+                opacity: 1.0;
+            }
+        }
