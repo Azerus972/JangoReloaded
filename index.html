@@ -58,6 +58,8 @@
         padding: 12px 16px;
         text-decoration: none;
         text-shadow: 0px 1px 0px #ffffff;
+        animation-name: bounce;
+        animation-duration: 10s;
     }
     
     .myButton:hover {
@@ -74,6 +76,28 @@
     .myButton:active {
         position: relative;
         top: 1px;
+    }
+    
+    @keyframes bounce {
+        from {
+            top: 100px;
+            animation-timing-function: ease-out;
+        }
+        25% {
+            top: 50px;
+            animation-timing-function: ease-in;
+        }
+        50% {
+            top: 150px;
+            animation-timing-function: ease-out;
+        }
+        75% {
+            top: 75px;
+            animation-timing-function: ease-in;
+        }
+        to {
+            top: 100px;
+        }
     }
 </style>
 
