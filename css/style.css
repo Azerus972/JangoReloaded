@@ -5,7 +5,9 @@
             animation-name: slidein;
             animation-duration: 6s;
             margin: 3% auto auto;
-            background-image: url("http://www.sushibattle.com/files/gamebackground2.png")
+            background-image: url("http://www.sushibattle.com/files/gamebackground2.png");
+            display: flex;
+            flex-wrap: nowrap;
         }
         
         @keyframes BOX {
@@ -64,13 +66,9 @@
         
         #Perso1 {
             align-content: right;
-            animation-name: mymove;
-            animation-duration: 4s;
-            display: flex;
         }
         
         #Perso2 {
-            display: flex;
             align-content: left;
         }
         

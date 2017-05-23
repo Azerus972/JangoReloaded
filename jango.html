@@ -13,12 +13,17 @@
 
     <div id="infos1" </div>
 
+        <input type="button" value="Attaquer" id="attk" </input>
+
+        <input type="button" value="potion" id="objet" </input>
 
 
 
         <h1><strong>Welcome to Jango's Party !</strong></h1>
 
         <div id="box" </div>
+
+            <progress id="health" value="100" max="100"></progress>
 
 
             <figcatption>
@@ -42,12 +47,14 @@
 
 
 
-            <input type="button" value="Attaquer" id="attk" </input>
 
-            <input type="button" value="potion" id="objet" </input>
 
 
             <script>
+                let health = document.getElementById("health")
+                health.value -= 10;
+
+
                 let attaque = document.getElementById('attk');
 
 

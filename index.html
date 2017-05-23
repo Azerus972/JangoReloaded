@@ -58,8 +58,6 @@
         padding: 12px 16px;
         text-decoration: none;
         text-shadow: 0px 1px 0px #ffffff;
-        animation-name: bounce;
-        animation-duration: 10s;
     }
     
     .myButton:hover {
@@ -99,6 +97,10 @@
             top: 100px;
         }
     }
+    
+    audio {
+        display: none;
+    }
 </style>
 
 <body>
@@ -122,6 +124,16 @@
     </figcaption>
 
     <a href="jango.html" class="myButton">Affronte ton destin</a>
+
+    <audio controls loop>
+
+        <audio autoplay="autoplay">
+            
+  <source src="music/landing.wav" type="audio/wav">
+  
+Your browser does not support the audio element.
+</audio>
+
 
 </body>
 
