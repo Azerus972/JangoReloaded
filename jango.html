@@ -16,6 +16,15 @@
 
     <h1><strong>Welcome to Jango's survival game!</strong></h1>
 
+    <section>
+
+        <div id="infos1" </div>
+
+            <input type="button" value="Attaquer" id="attk"> </input>
+
+            <input type="button" value="potion" id="objet"> </input>
+
+    </section>
 
 
 
@@ -29,22 +38,21 @@
 
 
         <div id="Perso1">
-            <img src="/home/azerus/dev/Jango/img/bbc.png" />
+            <img src="img/boss1.gif" />
         </div>
 
 
     </section>
 
-    <section>
 
-        <div id="infos1" </div>
+    <audio controls loop>
 
-            <input type="button" value="Attaquer" id="attk"> </input>
-
-            <input type="button" value="potion" id="objet"> </input>
-
-    </section>
-
+        <audio autoplay="autoplay">
+            
+  <source src="music/fight.mp3" type="audio/mp3">
+  
+Your browser does not support the audio element.
+</audio>
 
 
     <script>
@@ -56,7 +64,7 @@
 
             name: 'tikpo',
 
-            vie: 100,
+            vie: 800,
 
             attaque: 15,
 
@@ -69,7 +77,7 @@
 
             name: 'django',
 
-            vie: 100,
+            vie: 150,
 
             attaque: 25,
 
