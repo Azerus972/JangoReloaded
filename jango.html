@@ -11,114 +11,111 @@
 
 <body>
 
-    <div id="infos1" </div>
-
-        <input type="button" value="Attaquer" id="attk" </input>
-
-        <input type="button" value="potion" id="objet" </input>
 
 
 
-        <h1><strong>Welcome to Jango's Party !</strong></h1>
-
-        <div id="box" </div>
-
-            <progress id="health" value="100" max="100"></progress>
-
-
-            <figcatption>
-
-                <div id="Perso1" </div>
-
-                    <img src="/home/azerus/dev/Jango/img/bbc.png" />
-            </figcatption>
-
-            <figcaption>
-
-                <div id="Perso2" </div>
-
-                    <img src="https://s-media-cache-ak0.pinimg.com/originals/ce/ed/f1/ceedf154bd3febb19c220ee4223cafc9.gif" />
-
-
-            </figcaption>
-
-
-            <span></span>
+    <h1><strong>Welcome to Jango's survival game!</strong></h1>
 
 
 
 
-
-
-            <script>
-                let health = document.getElementById("health")
-                health.value -= 10;
-
-
-                let attaque = document.getElementById('attk');
+    <section id="sec1">
 
 
 
-                let perso1 = {
-
-                    name: 'tikpo',
-
-                    vie: 100,
-
-                    attaque: 15,
+        <div id="Perso2">
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/ce/ed/f1/ceedf154bd3febb19c220ee4223cafc9.gif" />
+        </div>
 
 
-                }
+        <div id="Perso1">
+            <img src="/home/azerus/dev/Jango/img/bbc.png" />
+        </div>
 
 
-                let perso2 = {
+    </section>
 
+    <section>
 
-                    name: 'django',
+        <div id="infos1" </div>
 
-                    vie: 100,
+            <input type="button" value="Attaquer" id="attk"> </input>
 
-                    attaque: 25,
+            <input type="button" value="potion" id="objet"> </input>
 
-
-
-                }
+    </section>
 
 
 
-                function fight() {
-
-                    perso2.vie -= perso1.attaque;
-
-                }
+    <script>
+        let health = document.getElementById("health")
+        health.value -= 10;
 
 
-                attaque.addEventListener("click", fight);
+        let attaque = document.getElementById('attk');
 
 
-                let up = document.getElementById('objet');
 
-                up.addEventListener("click", popo);
+        let perso1 = {
 
-                function popo() {
+            name: 'tikpo',
 
-                    perso2.vie += 10;
+            vie: 100,
 
-                }
-
-                function p2() {
+            attaque: 15,
 
 
-                    for (i = 0; i < arr.length; i++) {
+        }
 
-                        perso1.vie -= perso2.attaque;
-                        setTimeout(function() {
-                            alert("Jango Attaque !");
-                        }), 2000;
-                    }
-                    up.addEventListener("click", popo);
-                }
-            </script>
+
+        let perso2 = {
+
+
+            name: 'django',
+
+            vie: 100,
+
+            attaque: 25,
+
+
+
+        }
+
+
+
+        function fight() {
+
+            perso2.vie -= perso1.attaque;
+
+        }
+
+
+        attaque.addEventListener("click", fight);
+
+
+        let up = document.getElementById('objet');
+
+        up.addEventListener("click", popo);
+
+        function popo() {
+
+            perso2.vie += 10;
+
+        }
+
+        function p2() {
+
+
+            for (i = 0; i < arr.length; i++) {
+
+                perso1.vie -= perso2.attaque;
+                setTimeout(function() {
+                    alert("Jango Attaque !");
+                }), 2000;
+            }
+            up.addEventListener("click", popo);
+        }
+    </script>
 
 </body>
 

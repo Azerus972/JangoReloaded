@@ -1,82 +1,80 @@
-        #box {
-            width: 800px;
-            height: 480px;
-            z-index: 1;
-            animation-name: slidein;
-            animation-duration: 6s;
-            margin: 3% auto auto;
-            background-image: url("http://www.sushibattle.com/files/gamebackground2.png");
-            display: flex;
-            flex-wrap: nowrap;
-        }
-        
-        @keyframes BOX {
-            0% {
-                opacity: 0;
-            }
-            25% {
-                opacity: 0.25;
-            }
-            50% {
-                opacity: 0.5;
-            }
-            75% {
-                opacity: 0.75;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        
-        html,
-        body {
-            height: 100%;
-            background: rgb(60, 122, 205);
-        }
-        
-        h1 {
-            text-align: center;
-            color: white;
-            animation-name: slidein;
-            animation-duration: 2.5s;
-            text-decoration: white
-        }
-        
-        @keyframes slidein {
-            0% {
-                opacity: 0.0;
-            }
-            ;
-            25% {
-                opacity: 0.25
-            }
-            ;
-            50% {
-                opacity: 0.50
-            }
-            ;
-            75% {
-                opacity: 0.75
-            }
-            ;
-            100% {
-                opacity: 1.0;
-            }
-        }
-        
-        #Perso1 {
-            align-content: right;
-        }
-        
-        #Perso2 {
-            align-content: left;
-        }
-        
-        @keyframes mymove {
-            from {
-                right: 0px;
-            }
-            to {
-                right: 200px;
-            }
-        }
+@keyframes BOX {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(/home/azerus/dev/Jango/img/onfire.gif);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    animation-name: slidein;
+    animation-duration: 2.5s;
+    text-decoration: white;
+    margin: 0;
+    padding: 0;
+}
+
+#sec1 {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@keyframes slidein {
+    0% {
+        opacity: 0.0;
+    }
+    ;
+    25% {
+        opacity: 0.25
+    }
+    ;
+    50% {
+        opacity: 0.50
+    }
+    ;
+    75% {
+        opacity: 0.75
+    }
+    ;
+    100% {
+        opacity: 1.0;
+    }
+}
+
+#infos1 {}
+
+@keyframes mymove {
+    from {
+        right: 0px;
+    }
+    to {
+        right: 200px;
+    }
+}
+
+#info1 {}
