@@ -18,7 +18,7 @@
 
 body {
     min-height: 100vh;
-    background-image: url(/home/azerus/dev/Jango/img/onfire.gif);
+    background-image: url(img/onfire.gif);
     background-size: cover;
     width: 100%;
     display: flex;
